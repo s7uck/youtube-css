@@ -1,0 +1,111 @@
+ytd-searchbox * {
+  border-radius: 0px !important;
+}
+div#voice-search-button {
+  display: none !important;
+}
+yt-icon#logo-icon * {
+  display: none;
+}
+yt-icon#logo-icon {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/e1/Logo_of_YouTube_%282015-2017%29.svg);
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+ytd-logo[is-red-logo] yt-icon#logo-icon {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/8d/YouTube_Red_logo_%282015-2017%29.svg);
+}
+[dark] yt-icon#logo-icon {
+  filter: invert() hue-rotate(180deg) saturate(5) brightness(0.8);
+}
+ytd-subscribe-button-renderer:not([subscribed]) {
+  background-color: var(--yt-spec-badge-chip-background)
+}
+ytd-subscribe-button-renderer:not([subscribed]) * {
+  color: var(--primary-color) !important;
+}
+.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal {
+  background-color: transparent;
+}
+ytd-subscribe-button-renderer[subscribed] {
+  background-color: #ff0000;
+}
+ytd-subscribe-button-renderer[subscribed] * {
+  color: #fff !important;
+}
+yt-icon {
+  stroke: #ff0000;
+}
+#thumbnail, #avatar, yt-img-shadow, ytd-topbar-menu-button-renderer, [rounded-container], .ytd-topbar-menu-button-renderer, tp-yt-paper-item, tp-yt-paper-item:before, ytd-guide-entry-renderer, ytd-post-renderer[rounded-container], #description.ytd-watch-metadata, .yt-spec-button-shape-next, yt-dropdown-menu[modern-dialogs], [modern-dialogs], ytd-menu-popup-renderer, ytd-multi-page-menu-renderer, ytd-backstage-post-thread-renderer, yt-chip-cloud-chip-renderer, a#endpoint, yt-icon-button.ytd-masthead:hover, ytd-topbar-menu-button-renderer.ytd-masthead:hover, ytd-notification-topbar-button-renderer.ytd-masthead:hover, .ytp-settings-menu, ytd-engagement-panel-section-list-renderer[modern-panels], .sbsb_a, .sbdd_b {
+  border-radius: 4px !important;
+}
+html {
+  --primary-color: #ff0000 !important;
+  --light-primary-color: #ff0000 !important;
+  --accent-color: #cc0000 !important;
+  --yt-spec-brand-link-text: #cc0000 !important;
+  --yt-spec-brand-button-background: #cc0000 !important;
+  --yt-spec-brand-icon-active: #ff0000 !important;
+  --yt-spec-icon-active-other: #ff0000 !important;
+  --yt-spec-brand-icon-active: #ff0000 !important;
+  --yt-spec-call-to-action: #ff0000 !important;
+  --yt-spec-call-to-action-inverse: #cc0000 !important;
+  --yt-spec-static-overlay-call-to-action: #ff0000 !important;
+}
+html[dark] {
+  color-scheme: dark;
+  --primary-color: #cc4444 !important;
+  --light-primary-color: #cc4444 !important;
+  --accent-color: #cc4444 !important;
+  --yt-spec-brand-link-text: #ccbbbb !important;
+  --yt-spec-brand-button-background: #ccbbbb !important;
+  --yt-spec-brand-icon-active: #cc4444 !important;
+  --yt-spec-icon-active-other: #cc4444 !important;
+  --yt-spec-brand-icon-active: #cc4444 !important;
+  --yt-spec-call-to-action: #cc4444 !important;
+  --yt-spec-call-to-action-inverse: #ccbbbb !important;
+  --yt-spec-static-overlay-call-to-action: #cc4444 !important;
+}
+::selection {
+  background-color: var(--accent-color);
+}
+.guide-icon.ytd-guide-entry-renderer {
+  color: #cc4444 !important;
+}
+yt-rich-grid-row, #contents {
+  max-width: none !important;
+}
+yt-chip-cloud-chip-renderer[selected] {
+  background-color: var(--accent-color) !important;
+}
+ytd-rich-shelf-renderer, .expand-collapse-button, #dismissible.ytd-rich-shelf-renderer, #top-row.ytd-watch-metadata {
+  border: none !important;
+}
+#vue-app, #warc-app {
+  font: inherit;
+  font-family: 'Roboto';
+  font-size: 1.5rem;
+}
+#warc-app button {
+  background-color: transparent;
+  padding: 8px 12px;
+  font-size: inherit;;
+  border: 0;
+  border-radius: 4px;
+}
+#warc-app button:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+#warc-app button:active {
+  background-color: rgba(255,255,255,0.3);
+}
+#warc-app button.active {
+  background-color: #cc4444;
+}
+#rich-shelf-header {
+  display: none !important;
+}
+a[title="Shorts"] {
+  display: none !important;
+}
