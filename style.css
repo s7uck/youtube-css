@@ -88,11 +88,12 @@ ytd-rich-shelf-renderer, .expand-collapse-button, #dismissible.ytd-rich-shelf-re
   font-size: 1.5rem;
 }
 #warc-app button {
-  background-color: transparent;
+  background-color: rgba(255,255,255,0.1);
   padding: 8px 12px;
   font-size: inherit;;
   border: 0;
   border-radius: 4px;
+  transition: 250ms;
 }
 #warc-app button:hover {
   background-color: rgba(255,255,255,0.2);
@@ -102,6 +103,10 @@ ytd-rich-shelf-renderer, .expand-collapse-button, #dismissible.ytd-rich-shelf-re
 }
 #warc-app button.active {
   background-color: #cc4444;
+}
+#warc-tab-headings {
+  display: flex;
+  gap: 3px;
 }
 #rich-shelf-header {
   display: none !important;
